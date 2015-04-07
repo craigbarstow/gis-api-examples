@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GIS Map Examples</title>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <link rel="stylesheet" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+  <style>
+    .map-container {
+      height: 700px;
+      width: 1000px;
+      margin: 0px;
+      padding: 0px
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Google Maps</h1>
+  <div class="map-container" id="google-map-canvas"></div>
+  <h1>Leaflet</h1>
+  <div class="map-container" id="leaflet-map-canvas"></div>
+  <h1>ESRI</h1>
+  <div class="map-container" id="esri-map-canvas"></div>
+
+  <!-- JQuery Include -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- Google Maps Javascript Include -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <!-- Leaflet Maps Javascript Include -->
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <!-- Esri Javascript Include -->
+  <script src="http://js.arcgis.com/3.13/"></script>
+  <!-- Create the Maps -->
+  <script src="googleMap.js"></script>
+  <script src="leafletMap.js"></script>
+  <script src="esriMap.js"></script>
+</body>
+</html>
